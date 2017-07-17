@@ -8,6 +8,7 @@
  * It is also helpful to perform a GET/POST request with a rest client then match up
  * the response with the Serial monitor for testing. 
  * NOTE: Parts of the Code have been commented out. Uncomment to run/test those parts
+ * The code is currently set up to make a GET Request once appropriate variables are set.
  */
 #include <EtherCard.h>
 
