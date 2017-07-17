@@ -93,12 +93,15 @@ void setup() {
 
 void loop() {
 /*********SERVER************/
+  /* this is commented out
 //Operating on listening (server) mode. (listening for incoming packets and requests)
   if(etherServer()){
     ether.httpServerReply(serverReply());
   }
   
   delay(200);
+ */
+ 
  /*******GET/POST*******/ 
   if (res > 220){
     etherInit();
@@ -107,7 +110,7 @@ void loop() {
   ether.packetLoop(ether.packetReceive());
   if (res == 200){
   //Making an HTTP POST Request
-  etherPost();
+ // etherPost();
  
   //Making an HTTP GET Request
   etherGet();
