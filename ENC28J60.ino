@@ -10,9 +10,18 @@
  * NOTE: Parts of the Code have been commented out. Uncomment to run/test those parts
  * The code is currently set up to make a GET Request once appropriate variables are set.
  */
+
+/*
+ *PIN MAP:
+ * SO  - 12
+ * SCK - 13
+ * SI  - 11
+ * CS  - 10 (AS PER #DEFINE)  
+*/
+
 #include <EtherCard.h>
 
-#define ethCSpin 10 //put the digital pin that the CS is connected to
+#define ethCSpin 10 //put the digital pin that the CS is connected to (library default is 8)
 
 // ethernet interface mac address, must be unique on the LAN
 static byte mymac[] = { 0x74,0x69,0x69,0x2D,0x30,0x31 }; //this is an example but any other uniqe number can be used
